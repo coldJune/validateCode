@@ -7,17 +7,6 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- needed for ContextLoaderListener -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<!-- 配置资源文件路径 -->
-		<param-value>classpath:applicationContext*.xml</param-value>
-	</context-param>
-
-	<!-- Bootstraps the root web application context before servlet initialization -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
 
 	<!-- 配置Struts2的Filter -->
 	<filter>
